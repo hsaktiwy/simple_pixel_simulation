@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.beryx.jlink' version '2.24.4'
+}
+
+group = 'org.example'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'main.java.miniWorld.MyCanva.Main'  // Change to your real class
+}
+
+jlink {
+    imageName = 'MiniWorldApp'
+
+    jpackage {
+        installerType = 'exe'
+        installerName = 'MiniWorldInstaller'
+        appVersion = '1.0.0'
+    }
+}

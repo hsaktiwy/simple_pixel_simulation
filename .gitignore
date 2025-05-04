@@ -1,0 +1,20 @@
+script.sh# Gradle
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Other
+*.class
+*.sh
